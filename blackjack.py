@@ -43,7 +43,7 @@ class Blackjack:
         second_card, second_value = self.shuffled_deck.pop()
         self.deck_pop.append((second_card, second_value))
 
-        print(f"The dealer's second card is face down, you can't see it!")
+        print("The dealer's second card is face down, you can't see it!")
 
         dealer_value = first_value + second_value
 
@@ -178,7 +178,7 @@ class Blackjack:
             dealer_hit_card, dealer_hit_value = self.shuffled_deck.pop()
             self.deck_pop.append((dealer_hit_card, dealer_hit_value))
             sleep(1.5)
-            print(f"The dealer's card is...\n")
+            print("The dealer's card is...\n")
             sleep(1.5)
             print(dealer_hit_card)
 
