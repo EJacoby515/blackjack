@@ -1,5 +1,5 @@
 from time import sleep
-import random
+import secrets
 
 class Blackjack:
     def __init__(self):
@@ -16,7 +16,7 @@ class Blackjack:
             sleep(1.5)
             print("Glad you decided to join us. Shuffling the cards now")
             self.shuffled_deck = list(self.full_deck.items())
-            random.shuffle(self.shuffled_deck)
+            secrets.SystemRandom().shuffle(self.shuffled_deck)
             sleep(1.5)
             print("Cards have been shuffled! Let's PLAY!")
             sleep(1.5)
